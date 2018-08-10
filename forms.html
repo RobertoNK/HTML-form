@@ -1,0 +1,65 @@
+<html>
+<head>
+
+</head>
+<body>
+    <form action="">
+        <p>
+            <!--forms del tipo text y password -->
+           First Name: <input type="text" size=25 name="fname">
+           Last Name: <input type="text" maxlength="20" name="Lname">
+           E-mail: <input type="text" maxlength="30"name="email">
+           Password: <input type="password" maxlength="30" name="password">
+
+        </p>
+    
+    
+        <p>
+            <!--input label for checkbox requires value and name attributes-->
+            Grado de instruccion:
+            <label> <input type="checkbox" checked="checked" value="Freshmen" name="instruccion">Freshmen</label>
+            <label> <input type="checkbox" value="Sophmore" name="instruccion">Sophmore</label>
+            <label> <input type="checkbox"  value="Junior"name="instruccion">Junior</label>
+            <label> <input type="checkbox"  value="Senior"name="instruccion">Senior</label>
+        </p>
+
+    
+    
+        <p>
+            Categoria de edad:
+            <label><input type="radio" checked="checked" name="age" value="18-25"> 18-25</label>
+            <label><input type="radio"  name="age" value="25-35"> 25-35</label>
+            <label><input type="radio"  name="age" value="35-65"> 35-65</label>
+            <label><input type="radio"  name="age" value="over 65"> Over 65</label>
+
+        </p>
+        <p>
+            Select one:
+            <select size="1" name="grados">
+                <!--Defualt size is equal to 1 item-->
+                <!--Selesct tiene que tener name attribute-->
+                <option></option>
+                <option>Freshmen</option>
+                <option>Sophmore</option>
+                <option>Junior</option>
+                <option>Senior</option>
+        </p>
+            </select>
+            <p>
+                Tell us something about you and your future plans <br />
+                <!--EL numero de cols and rows have to be specified-->
+                <textarea name="Statement" rows="3" cols="40"> 
+                   
+                </textarea>
+            </p>
+            <p>
+                <!--Value attribute for submit and reset types-->
+                <input type="submit" value="submit form">
+                <input type="reset" value="reset form">
+
+            </p>
+
+        
+    </form>
+</body>
+</html>
